@@ -23,3 +23,4 @@ class C:
 
 data = {"date": datetime.now(), "c": C()}
 print(tools.dumps_json(data))
+print(tools.loads_json(tools.dumps_json(data)))
